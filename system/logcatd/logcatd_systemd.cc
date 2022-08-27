@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
 
     // Build message
     auto androidEntry = msg.initEvent().initAndroidLog();
-    androidEntry.setTs(timestamp);
+    androidEntry.sets(timestamp);
     androidEntry.setMessage(json11::Json(kv).dump());
     if (kv.count("_PID")) androidEntry.setPid(std::atoi(kv["_PID"].c_str()));
     if (kv.count("PRIORITY")) androidEntry.setPriority(std::atoi(kv["PRIORITY"].c_str()));

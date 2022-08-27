@@ -30,7 +30,7 @@ def read_power_avg():
     pwrs.append(read_power())
     time.sleep(0.01)
   power_total, power_som = np.mean([x[0] for x in pwrs]), np.mean([x[1] for x in pwrs])
-  return "total %7.2f mW  SOM %7.2f mW" % (power_total, power_som)
+  return "total %7.2f mW  SOME %7.2f mW" % (power_total, power_som)
 
 
 def gpio_export(pin):

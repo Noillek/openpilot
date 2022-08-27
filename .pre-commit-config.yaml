@@ -19,10 +19,10 @@ repos:
     rev: v2.2.1
     hooks:
     -   id: codespell
-        exclude: '^(pyextra/)|(third_party/)|(cereal/)|(rednose/)|(panda/)|(laika/)|(opendbc/)|(laika_repo/)|(rednose_repo/)/'
+        exclude: '^(pyextra/)|(third_party/)|(cereal/)|(rednose/)|(panda/)|(laika/)|(opendbc/)|(laika_repo/)|(rednose_repo/)|(system/camerad/include/)|(.*\.ts)'
         args:
+        - -L ned
         - --builtins clear,rare,informal,usage,code,names,en-GB_to_en-US
-        - --ignore-words NED
 -   repo: https://github.com/pre-commit/mirrors-mypy
     rev: v0.931
     hooks:
